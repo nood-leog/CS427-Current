@@ -1,4 +1,5 @@
-#CS427 Algorithms
+# CS427 Algorithms
+
 Final Project
 Given a weighted undirected connected graph G with n vertices and m edges, find shortest paths
 from source vertex s to each of the other vertices using Dijkstra’s algorithm.
