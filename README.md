@@ -1,11 +1,15 @@
 # CS427 Algorithms
 
 Final Project
+
 Given a weighted undirected connected graph G with n vertices and m edges, find shortest paths
 from source vertex s to each of the other vertices using Dijkstra’s algorithm.
-Represent the graph both by an adjacency matrix and by adjacency lists. The adjacency matrix
-version should use a simple linear search to find the minimum distance vertex. The adjacency list
-implementation should use a min-heap for efficient extraction of the minimum distance vertex.
+Represent the graph both by an adjacency matrix and by adjacency lists. 
+
+The adjacency matrix version should use a simple linear search to find the minimum distance vertex. 
+
+The adjacency list implementation should use a min-heap for efficient extraction of the minimum distance vertex.
+
 Submit a technical report and the Java code (for both implementations) as a zipped Final Project
 folder to Canvas. Follow the guidelines from the How to Write the Technical Report document.
 Specifically, the report should contain:
