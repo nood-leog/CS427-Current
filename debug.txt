@@ -1,0 +1,52 @@
+solution.java
+
+//debug
+  //helper function to print the calculated distance
+  public static void printDistances(int[] distances, int source, String algorithmName, int numVertices)
+  {
+    System.out.println("\nShortest distances from source " + source + " using " + algorithmName + ":");
+    for (int i = 0; i < numVertices; i++)
+    {
+      //if the distance is infinity, print unreachable
+      if (distances[i] == graph.INFINITY)
+      {
+        System.out.println("Vertex " + i + ": Unreachable");
+      }
+      else //otherwise just print the distance as is
+      {
+        System.out.println("Vertex " + i + ": " + distances[i]);
+      }
+    }
+  }
+
+
+graph.java
+
+    //debug
+    //print adjacency matrix
+    public void printAdjMatrix()
+    {
+        System.out.println("Adjacency Matrix:");
+        for (int i = 0; i < nVertices; i++) //outer loop for rows
+        {
+            System.out.print("  " + i + ": [");
+
+            for (int j = 0; j < nVertices; j++) //inner loop for columns
+            {
+                System.out.print((adjMatrix[i][j] == INFINITY ? "inf" : adjMatrix[i][j]));
+                if (j < nVertices - 1) System.out.print(", ");
+            }
+            System.out.println("]");
+        }
+    }
+
+    //debug
+    //print adjacency list
+    public void printAdjList()
+    {
+        System.out.println("Adjacency List:");
+        for (int i = 0; i < nVertices; i++)
+        {
+            System.out.println("  " + i + ": " + adjList.get(i));
+        }
+    }

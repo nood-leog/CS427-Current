@@ -101,7 +101,6 @@ public class graph
         return dist; //return the distance array
     }
 
-
     //Dijkstra's algorithm using adjacency list with min-heap
     public int[] dijkstraAdjListHeap(int startVertex)
     {
@@ -134,34 +133,5 @@ public class graph
             }
         }
         return dist; //return the distance array
-    }
-
-    //debug
-    //print adjacency matrix
-    public void printAdjMatrix()
-    {
-        System.out.println("Adjacency Matrix:");
-        for (int i = 0; i < nVertices; i++) //outer loop for rows
-        {
-            System.out.print("  " + i + ": [");
-
-            for (int j = 0; j < nVertices; j++) //inner loop for columns
-            {
-                System.out.print((adjMatrix[i][j] == INFINITY ? "inf" : adjMatrix[i][j]));
-                if (j < nVertices - 1) System.out.print(", ");
-            }
-            System.out.println("]");
-        }
-    }
-
-    //debug
-    //print adjacency list
-    public void printAdjList()
-    {
-        System.out.println("Adjacency List:");
-        for (int i = 0; i < nVertices; i++)
-        {
-            System.out.println("  " + i + ": " + adjList.get(i));
-        }
     }
 }

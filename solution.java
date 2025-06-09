@@ -4,7 +4,6 @@
 
 public class solution
 {
-
   public static void main(String[] args)
   {
     //test cases
@@ -73,24 +72,5 @@ public class solution
     String graphType = (density < 0.2) ? "Sparse" : "Dense";
     System.out.printf("%-15s | %-10d | %-12d | %-25d | %-30d\n",
             graphType, numVertices, actualEdges, durationMatrix, durationList);
-  }
-
-  //debug
-  //helper function to print the calculated distance
-  public static void printDistances(int[] distances, int source, String algorithmName, int numVertices)
-  {
-    System.out.println("\nShortest distances from source " + source + " using " + algorithmName + ":");
-    for (int i = 0; i < numVertices; i++)
-    {
-      //if the distance is infinity, print unreachable
-      if (distances[i] == graph.INFINITY)
-      {
-        System.out.println("Vertex " + i + ": Unreachable");
-      }
-      else //otherwise just print the distance as is
-      {
-        System.out.println("Vertex " + i + ": " + distances[i]);
-      }
-    }
   }
 }
