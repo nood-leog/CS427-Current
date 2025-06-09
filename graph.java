@@ -1,3 +1,7 @@
+//graph.java
+//Alex Boyce
+//CS427 Final Project
+
 import java.util.*;
 
 //graph class
@@ -132,6 +136,7 @@ public class graph
         return dist; //return the distance array
     }
 
+    //debug
     //print adjacency matrix
     public void printAdjMatrix()
     {
@@ -149,6 +154,7 @@ public class graph
         }
     }
 
+    //debug
     //print adjacency list
     public void printAdjList()
     {

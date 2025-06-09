@@ -1,4 +1,6 @@
 //Node.java
+//Alex Boyce
+//CS427 Final Project
 
 class Node implements Comparable<Node>
 {
